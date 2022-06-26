@@ -82,7 +82,8 @@ class Comment
 
     /**
      * Getter for Id.
-     * @return int|null
+     *
+     * @return int|null Id
      */
     public function getId(): ?int
     {
@@ -91,7 +92,8 @@ class Comment
 
     /**
      * Getter for nick.
-     * @return string|null
+     *
+     * @return string|null Nick
      */
     public function getNick(): ?string
     {
@@ -101,7 +103,8 @@ class Comment
     /**
      * Setter for nick.
      *
-     * @param string $nick
+     * @param string $nick Nick
+     *
      * @return Comment
      */
     public function setNick(string $nick): self
@@ -113,7 +116,8 @@ class Comment
 
     /**
      * Getter for email.
-     * @return string|null
+     *
+     * @return string|null Email
      */
     public function getEmail(): ?string
     {
@@ -123,7 +127,8 @@ class Comment
     /**
      * Setter for email.
      *
-     * @param string $email
+     * @param string $email Email
+     *
      * @return Comment
      */
     public function setEmail(string $email): self
@@ -155,7 +160,8 @@ class Comment
 
     /**
      * Getter for content.
-     * @return string|null
+     *
+     * @return string|null Content
      */
     public function getContent(): ?string
     {
@@ -164,7 +170,9 @@ class Comment
 
     /**
      * Setter for content.
-     * @param string $content
+     *
+     * @param string $content Content
+     *
      * @return Comment
      */
     public function setContent(string $content): self
@@ -176,7 +184,8 @@ class Comment
 
     /**
      * Getter for post.
-     * @return Post|null
+     *
+     * @return Post|null Post
      */
     public function getPost(): ?Post
     {
@@ -185,7 +194,9 @@ class Comment
 
     /**
      * Setter for post.
-     * @param Post|null $post
+     *
+     * @param Post|null $post Post
+     *
      * @return Comment
      */
     public function setPost(?Post $post): self

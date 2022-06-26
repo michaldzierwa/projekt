@@ -23,6 +23,8 @@ class CommentRepository extends ServiceEntityRepository
 {
     /**
      * Constructor.
+     *
+     * @param ManagerRegistry $registry Manager registry
      */
     public function __construct(ManagerRegistry $registry)
     {
@@ -31,6 +33,9 @@ class CommentRepository extends ServiceEntityRepository
 
     /**
      * Add.
+     *
+     * @param Comment $entity Comment entity
+     * @param bool    $flush  Bool flush
      */
     public function add(Comment $entity, bool $flush = false): void
     {
@@ -43,6 +48,9 @@ class CommentRepository extends ServiceEntityRepository
 
     /**
      * Remove.
+     *
+     * @param Comment $entity Comment entity
+     * @param bool    $flush  Bool flush
      */
     public function remove(Comment $entity, bool $flush = false): void
     {
@@ -55,6 +63,8 @@ class CommentRepository extends ServiceEntityRepository
 
     /**
      * Query all records.
+     *
+     * @param Post $post Post
      *
      * @return QueryBuilder Query builder
      */

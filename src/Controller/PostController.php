@@ -41,8 +41,9 @@ class PostController extends AbstractController
     /**
      * Constructor.
      *
-     * @param PostServiceInterface $postService Post service
-     * @param TranslatorInterface  $translator  Translator
+     * @param PostServiceInterface    $postService    Post service
+     * @param TranslatorInterface     $translator     Translator
+     * @param CommentServiceInterface $commentService Comment service
      */
     public function __construct(PostServiceInterface $postService, TranslatorInterface $translator, CommentServiceInterface $commentService)
     {

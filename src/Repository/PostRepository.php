@@ -49,6 +49,8 @@ class PostRepository extends ServiceEntityRepository
     /**
      * Query all records.
      *
+     * @param array<string, object> $filters Filters
+     *
      * @return QueryBuilder Query builder
      */
     public function queryAll(array $filters = []): QueryBuilder
